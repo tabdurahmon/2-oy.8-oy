@@ -1,0 +1,161 @@
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calculator-container {
+  width: 1008px;
+  height: 606px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calculator-form,
+.calculator-results {
+  padding: 20px;
+}
+
+.calculator-form {
+  background-color: #f9f9f9;
+  width: 504px;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #d8db2f;
+  color: #333;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  width: 314px;
+  height: 56px;
+  border-radius: 999px;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+#amount,
+#term,
+#rate {
+  width: 424px;
+  border-radius: 4px;
+  color: #4e6e7e;
+  height: 20px;
+}
+
+.custom-radio {
+  position: relative;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 424px;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.custom-radio input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #333;
+  background-color: #ffd700;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.custom-radio label {
+  margin: 0;
+  cursor: pointer;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.custom-radio input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 20%;
+  background-color: #ffd700;
+  border-radius: 5px 0 0 5px;
+}
+
+.calculator-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e3d56;
+  width: 504px;
+  border-radius: 0 24px 24px 80px;
+  color: #fff;
+}
+
+.results-content {
+  text-align: center;
+}
+
+.results-content img {
+  width: 192px;
+  height: 192px;
+  margin-bottom: 20px;
+}
+
+.results-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.results-content p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
